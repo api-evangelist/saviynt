@@ -1,0 +1,20 @@
+{
+  "msg": "string",
+  "controls": [
+    {
+      "analyticsId": 0,
+      "application": "string",
+      "analyticsName": "string",
+      "controlid": "string",
+      "category": "string",
+      "description": "string",
+      "lastRun": "string",
+      "Risk": "string",
+      "recommendations": "string",
+      "conflictCount": 0
+    }
+  ],
+  "displayCount": 0,
+  "errorCode": "string",
+  "totalCount": 0
+}

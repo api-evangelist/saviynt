@@ -1,0 +1,6 @@
+{
+  "application": "string",
+  "category": "string",
+  "max": "string",
+  "offset": "string"
+}

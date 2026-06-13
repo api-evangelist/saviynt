@@ -1,0 +1,47 @@
+{
+  "title": "FetchControlAttributesRequest",
+  "x-stoplight": {
+    "id": "iasaxhi5b6ra5"
+  },
+  "type": "object",
+  "properties": {
+    "analyticstype": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "c25fj8an0lke0"
+      },
+      "enum": [
+        "ES",
+        "DB"
+      ]
+    },
+    "analyticsname": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "c25fj8an0lke0"
+      }
+    },
+    "id": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ccnguyxlr43nw"
+      }
+    },
+    "offset": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "j1hx738kzy1wi"
+      }
+    },
+    "max": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "t60xlmb2ol31w"
+      }
+    }
+  },
+  "required": [
+    "analyticstype"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

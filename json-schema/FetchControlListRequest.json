@@ -1,0 +1,34 @@
+{
+  "title": "FetchControlListRequest",
+  "x-stoplight": {
+    "id": "j1hfpwqxneu11"
+  },
+  "type": "object",
+  "properties": {
+    "application": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "x5lnjaqwxhaas"
+      }
+    },
+    "category": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "bui0yfkd4lwoy"
+      }
+    },
+    "max": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "8s25cgick27fu"
+      }
+    },
+    "offset": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "h433q0x239tr5"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

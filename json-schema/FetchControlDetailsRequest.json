@@ -1,0 +1,31 @@
+{
+  "title": "FetchControlDetailsRequest",
+  "x-stoplight": {
+    "id": "6ns86hzu7sdd8"
+  },
+  "type": "object",
+  "properties": {
+    "controlId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3v79rbtw8qy9d"
+      }
+    },
+    "max": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "de4luh6fct1in"
+      }
+    },
+    "offset": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "64sybht5vrikh"
+      }
+    }
+  },
+  "required": [
+    "controlId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -44,6 +44,32 @@ apis:
         url: https://developers.saviynt.com/apis/rest/reference/5.0/saviynt-enterprise-identity-cloud-api-reference/
       - type: Endpoints
         url: https://developers.saviynt.com/apis/rest/reference/5.0/endpoints/
+      - type: OpenAPI
+        url: openapi/saviynt-eic-api-openapi.yaml
+      - type: JSONSchema
+        url: json-schema/FetchControlListRequest.json
+      - type: JSONSchema
+        url: json-schema/FetchControlListResponse.json
+      - type: JSONSchema
+        url: json-schema/FetchControlListControl.json
+      - type: JSONSchema
+        url: json-schema/FetchControlDetailsRequest.json
+      - type: JSONSchema
+        url: json-schema/RunAnalyticsControlsRequest.json
+      - type: JSONSchema
+        url: json-schema/FetchRuntimeControlsDataRequest.json
+      - type: JSONSchema
+        url: json-schema/FetchRuntimeControlsDataV2Request.json
+      - type: JSONSchema
+        url: json-schema/FetchControlAttributesRequest.json
+      - type: JSONSchema
+        url: json-schema/FetchControlListESRequest.json
+      - type: JSONSchema
+        url: json-schema/FetchControlDetailsESRequest.json
+      - type: Vocabulary
+        url: vocabulary/saviynt-vocabulary.json
+      - type: JSONLDContext
+        url: json-ld/saviynt-context.jsonld
 common:
   - type: Website
     url: https://saviynt.com

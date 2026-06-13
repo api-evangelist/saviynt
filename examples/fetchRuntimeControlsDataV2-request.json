@@ -1,0 +1,8 @@
+{
+  "requestor": "string",
+  "analyticsname": "string",
+  "analyticsid": "string",
+  "attributes": {},
+  "max": "string",
+  "offset": "string"
+}

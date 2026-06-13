@@ -1,0 +1,273 @@
+{
+  "name": "Saviynt EIC API Vocabulary",
+  "description": "Terms and concepts from the Saviynt Enterprise Identity Cloud API",
+  "version": "5.0",
+  "terms": [
+    {
+      "term": "application",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "category",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "max",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "offset",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "msg",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "controls",
+      "type": "array",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "displayCount",
+      "type": "integer",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "errorCode",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "totalCount",
+      "type": "integer",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsId",
+      "type": "integer",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsName",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "controlid",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "description",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "lastRun",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "Risk",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "recommendations",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "conflictCount",
+      "type": "integer",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "controlId",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "jobgroup",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "jobname",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsCategories",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsApplications",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticssubcategories",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsid",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticsname",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "attributes",
+      "type": "object",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "loggedinuser",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "requestor",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "analyticstype",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "id",
+      "type": "string",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "searchcriteria",
+      "type": "object",
+      "description": "",
+      "example": ""
+    },
+    {
+      "term": "filtercriteria",
+      "type": "object",
+      "description": "",
+      "example": ""
+    }
+  ],
+  "operations": [
+    {
+      "operationId": "fetchControlList",
+      "summary": "Fetch List of Analytics",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchControlList"
+    },
+    {
+      "operationId": "fetchControlDetails",
+      "summary": "Fetch Analytics Details",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchControlDetails"
+    },
+    {
+      "operationId": "runAnalyticsControls",
+      "summary": "Run Analytics Controls",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/runAnalyticsControls"
+    },
+    {
+      "operationId": "fetchRuntimeControlsData",
+      "summary": "Fetch Runtime Controls Data",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchRuntimeControlsData"
+    },
+    {
+      "operationId": "fetchRuntimeControlsDataV2",
+      "summary": "Fetch Runtime Controls Data V2",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchRuntimeControlsDataV2"
+    },
+    {
+      "operationId": "fetchControlAttributes",
+      "summary": "Fetch Control Attributes",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchControlAttributes"
+    },
+    {
+      "operationId": "fetchControlListES",
+      "summary": "Fetch List of Analytics ES",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchControlListES"
+    },
+    {
+      "operationId": "fetchControlDetailsES",
+      "summary": "Fetch Analytics Details ES",
+      "tags": [
+        "Analytics"
+      ],
+      "method": "POST",
+      "path": "/fetchControlDetailsES"
+    }
+  ]
+}

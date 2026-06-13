@@ -1,0 +1,46 @@
+{
+  "title": "FetchRuntimeControlsDataRequest",
+  "x-stoplight": {
+    "id": "5h540av4auguz"
+  },
+  "type": "object",
+  "properties": {
+    "analyticsid": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "6ek1ln8a242yd"
+      }
+    },
+    "analyticsname": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "mlzv7ri3mtb21"
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "4h6byvz7roccx"
+      }
+    },
+    "max": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "2nyv0eifbq4vv"
+      }
+    },
+    "offset": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ivw7lngvlka5q"
+      }
+    },
+    "loggedinuser": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "cz04q6509vxtx"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

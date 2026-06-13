@@ -1,0 +1,8 @@
+{
+  "analyticsid": "string",
+  "analyticsname": "string",
+  "attributes": {},
+  "max": "string",
+  "offset": "string",
+  "loggedinuser": "string"
+}

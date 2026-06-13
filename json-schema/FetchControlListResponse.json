@@ -1,0 +1,67 @@
+{
+  "title": "FetchControlListResponse",
+  "x-stoplight": {
+    "id": "af3dfar44m893"
+  },
+  "type": "object",
+  "examples": [
+    {
+      "msg": "Success",
+      "controls": [
+        {
+          "analyticsId": 45,
+          "application": "System1",
+          "analyticsName": "Test 1",
+          "controlid": null,
+          "category": "Certification",
+          "description": "",
+          "lastRun": "05-01-2017 21:10:03",
+          "risk": "High",
+          "recommendations": "",
+          "conflictCount": 14
+        }
+      ],
+      "errorCode": "0"
+    }
+  ],
+  "properties": {
+    "msg": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "54jexjooivov4"
+      }
+    },
+    "controls": {
+      "type": "array",
+      "x-stoplight": {
+        "id": "t7tnixg5vn1v3"
+      },
+      "items": {
+        "$ref": "#/components/schemas/FetchControlListControl",
+        "x-stoplight": {
+          "id": "i0b8qfwrmpdex"
+        }
+      }
+    },
+    "displayCount": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "p0e0watz2bk3i"
+      }
+    },
+    "errorCode": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ltcnqu8587hha"
+      }
+    },
+    "totalCount": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "m2v9vy8tcmofe"
+      }
+    }
+  },
+  "description": "",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

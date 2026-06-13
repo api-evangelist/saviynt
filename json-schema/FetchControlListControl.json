@@ -1,0 +1,84 @@
+{
+  "title": "FetchControlListControl",
+  "x-stoplight": {
+    "id": "wxutwinsvzwaf"
+  },
+  "type": "object",
+  "properties": {
+    "analyticsId": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "5rjbguo1klhuk"
+      }
+    },
+    "application": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "rp5qq6id2qoo0"
+      }
+    },
+    "analyticsName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "lo70rd8867eu2"
+      }
+    },
+    "controlid": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "3ktb3qmfwcoa6"
+      }
+    },
+    "category": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "t21cmpzznft8j"
+      }
+    },
+    "description": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "zxc4f5ii3j9hx"
+      }
+    },
+    "lastRun": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "k0f5pe0k11i3t"
+      }
+    },
+    "Risk": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "jfu3ehuhksfgu"
+      }
+    },
+    "recommendations": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "pa52dmzf12ahy"
+      }
+    },
+    "conflictCount": {
+      "type": "integer",
+      "x-stoplight": {
+        "id": "i1zgqqs00de3d"
+      }
+    }
+  },
+  "examples": [
+    {
+      "analyticsId": 0,
+      "application": "string",
+      "analyticsName": "string",
+      "controlid": "string",
+      "category": "string",
+      "description": "string",
+      "lastRun": "string",
+      "Risk": "string",
+      "recommendations": "string",
+      "conflictCount": 0
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

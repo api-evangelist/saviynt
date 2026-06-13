@@ -1,0 +1,46 @@
+{
+  "title": "FetchControlDetailsESRequest",
+  "x-stoplight": {
+    "id": "zqd9n7c2j9wmz"
+  },
+  "type": "object",
+  "properties": {
+    "analyticsid": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "gj6tpn741fxy4"
+      }
+    },
+    "analyticsname": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "bgt8wkxt18njk"
+      }
+    },
+    "loggedinuser": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "0fwrz82mscim0"
+      }
+    },
+    "max": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "klh70gnv0kas0"
+      }
+    },
+    "offset": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hipjrsgtmj42n"
+      }
+    },
+    "filtercriteria": {
+      "type": "object",
+      "x-stoplight": {
+        "id": "hgjn2kzypzve2"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

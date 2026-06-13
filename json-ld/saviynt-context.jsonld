@@ -1,0 +1,59 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "saviynt": "https://saviynt.com/vocab#",
+    "eic": "https://developers.saviynt.com/apis/rest/reference/5.0/",
+    "controlName": "saviynt:controlName",
+    "controlType": "saviynt:controlType",
+    "controlStatus": "saviynt:controlStatus",
+    "controlCategory": "saviynt:controlCategory",
+    "controlSubCategory": "saviynt:controlSubCategory",
+    "controlDescription": "saviynt:controlDescription",
+    "analyticsName": "saviynt:analyticsName",
+    "analyticsType": "saviynt:analyticsType",
+    "riskScore": "saviynt:riskScore",
+    "entitlement": "saviynt:entitlement",
+    "userAccount": "saviynt:userAccount",
+    "identity": "saviynt:identity",
+    "accessRequest": "saviynt:accessRequest",
+    "sodViolation": "saviynt:sodViolation",
+    "certification": "saviynt:certification",
+    "privilegedAccess": "saviynt:privilegedAccess",
+    "fetchControlList": {
+      "@id": "eic:fetchControlList",
+      "@type": "@id"
+    },
+    "fetchControlDetails": {
+      "@id": "eic:fetchControlDetails",
+      "@type": "@id"
+    },
+    "runAnalyticsControls": {
+      "@id": "eic:runAnalyticsControls",
+      "@type": "@id"
+    },
+    "fetchRuntimeControlsData": {
+      "@id": "eic:fetchRuntimeControlsData",
+      "@type": "@id"
+    },
+    "fetchControlAttributes": {
+      "@id": "eic:fetchControlAttributes",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "saviynt:SaviyntEICAPI",
+      "@type": "schema:WebAPI",
+      "schema:name": "Saviynt Enterprise Identity Cloud API",
+      "schema:description": "REST API for the Saviynt Enterprise Identity Cloud (EIC) platform, providing endpoints for identity administration, access requests, SOD policy management, identity analytics, rule engineering, delegated administration, and common IGA utilities.",
+      "schema:version": "5.0",
+      "schema:url": "https://developers.saviynt.com/apis/rest/",
+      "schema:provider": {
+        "@type": "schema:Organization",
+        "schema:name": "Saviynt",
+        "schema:url": "https://saviynt.com"
+      },
+      "schema:documentation": "https://developers.saviynt.com/apis/rest/reference/5.0/saviynt-enterprise-identity-cloud-api-reference/"
+    }
+  ]
+}

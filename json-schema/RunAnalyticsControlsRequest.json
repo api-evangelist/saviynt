@@ -1,0 +1,45 @@
+{
+  "title": "RunAnalyticsControlsRequest",
+  "x-stoplight": {
+    "id": "87y2dc3seajgq"
+  },
+  "type": "object",
+  "properties": {
+    "jobgroup": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "ggoezmz8mhpkd"
+      }
+    },
+    "jobname": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "md536xji95s6k"
+      }
+    },
+    "analyticsCategories": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "b642yifl4s6hx"
+      }
+    },
+    "analyticsApplications": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "240z30vkn6tn6"
+      }
+    },
+    "analyticssubcategories": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "oh3210dy6zx9e"
+      }
+    }
+  },
+  "required": [
+    "jobgroup",
+    "jobname",
+    "analyticsCategories"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
