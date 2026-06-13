@@ -1,0 +1,45 @@
+name: Saviynt API Rate Limits
+description: Saviynt Enterprise Identity Cloud REST API rate limiting details. Saviynt does not publicly document specific hard rate limits in requests-per-second or per-minute. Rate limiting behavior may vary by tenant configuration and deployment size. The platform uses OAuth 2.0 JWT bearer tokens with a 3600-second (60-minute) expiration. Best practices documentation recommends limiting concurrent API calls to avoid service overload.
+url: https://developers.saviynt.com/apis/rest/best-practices/
+created: "2026-06-13"
+modified: "2026-06-13"
+rateLimits:
+  - name: OAuth Token Expiration
+    description: Access tokens obtained via the /ECM/api/login endpoint are valid for 3600 seconds (60 minutes). After expiration, a new token must be obtained or refreshed via the /ECM/oauth/access_token endpoint.
+    limit: 3600
+    unit: seconds
+    scope: token
+    notes:
+      - Refresh tokens may be invalidated at any time; applications must handle token refresh gracefully.
+      - Token endpoint: POST https://{tenant}.saviyntcloud.com/ECM/api/login
+      - Refresh endpoint: POST https://{tenant}.saviyntcloud.com/ECM/oauth/access_token
+
+  - name: Concurrent API Requests
+    description: Saviynt recommends limiting concurrent API calls to prevent service overload. Specific numeric limits are not publicly documented and may vary by tenant size and contract.
+    limit: Not publicly specified
+    unit: concurrent requests
+    scope: tenant
+    notes:
+      - Avoid excessive parallel calls; implement request queuing for bulk operations.
+      - REST connector ConnectionJSON files may specify per-connector rate limits (e.g., max requests per second).
+
+  - name: General Request Rate
+    description: No publicly documented per-minute or per-hour request rate limit. Enterprise customers should review their contract terms and consult Saviynt support for tenant-specific limits.
+    limit: Not publicly specified
+    unit: requests per minute
+    scope: tenant
+    notes:
+      - Contact Saviynt support or review tenant configuration for enforced limits.
+      - API best practices page recommends batching and pagination for large data sets.
+
+bestPractices:
+  - Use pagination for large result sets to avoid timeout and rate limit issues.
+  - Cache OAuth tokens for their full 3600-second lifetime rather than requesting new tokens per API call.
+  - Implement exponential backoff and retry logic for 429 and 503 responses.
+  - Batch identity provisioning operations rather than issuing individual API calls.
+  - Use service accounts with scoped permissions for API access.
+references:
+  - url: https://developers.saviynt.com/apis/rest/best-practices/
+    description: Saviynt API Best Practices
+  - url: https://developers.saviynt.com/apis/rest/reference/5.0/auth/
+    description: Saviynt Authentication Reference

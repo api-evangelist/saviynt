@@ -1,0 +1,48 @@
+name: Saviynt Plans and Pricing
+description: Saviynt Enterprise Identity Cloud is sold as an enterprise SaaS platform with customizable pricing tiers. Pricing is not publicly listed and requires contact with Saviynt sales for a tailored quote based on user count, modules required, and deployment scale. Three general tiers are available covering different feature sets and organizational sizes.
+url: https://saviynt.com/contact-us/
+created: "2026-06-13"
+modified: "2026-06-13"
+plans:
+  - name: Essentials
+    description: Entry-level identity governance plan covering core IGA capabilities including user lifecycle management, basic access certifications, and role management. Suitable for organizations beginning their identity governance journey.
+    url: https://saviynt.com/contact-us/
+    pricing: Custom / Contact Sales
+    features:
+      - User lifecycle management
+      - Basic access certifications
+      - Role management
+      - REST API access
+      - Standard connectors
+
+  - name: Professional
+    description: Mid-tier plan adding advanced governance features including SOD policy management, access request workflows, delegated administration, and identity analytics dashboards. Designed for organizations with mature IGA requirements.
+    url: https://saviynt.com/contact-us/
+    pricing: Custom / Contact Sales
+    features:
+      - All Essentials features
+      - SOD policy management
+      - Access request and approval workflows
+      - Delegated administration
+      - Identity analytics
+      - Rule engineering
+      - Privileged access management (PAM)
+
+  - name: Premium
+    description: Full-featured enterprise plan including all platform capabilities — privileged access management, application access governance (AAG), identity security posture management (ISPM), AI-based risk analytics, and advanced integrations. Includes Saviynt Exchange ecosystem access and premium support SLAs.
+    url: https://saviynt.com/contact-us/
+    pricing: Custom / Contact Sales
+    features:
+      - All Professional features
+      - Identity Security Posture Management (ISPM)
+      - Application Access Governance (AAG)
+      - AI-powered risk analytics
+      - AI agent governance
+      - MCP Server integration
+      - Saviynt Exchange marketplace access
+      - Terraform provider support
+      - Premium SLA and dedicated support
+notes:
+  - Pricing is entirely custom and quote-based; no public price list is available.
+  - Contact integrations@saviynt.com for integration-specific inquiries.
+  - Saviynt raised $700M in a KKR-led funding round, reflecting enterprise market positioning.

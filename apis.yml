@@ -1,0 +1,72 @@
+aid: saviynt
+name: Saviynt
+description: Saviynt is an identity governance and administration (IGA) platform providing REST APIs for managing user identities, access requests, SOD violations, certifications, and privileged access controls across enterprise environments. The Saviynt Enterprise Identity Cloud API enables CRUD operations on user, account, and entitlement records; access request and approval workflows; rule engineering; segregation of duties policy management; and identity analytics.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/saviynt/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+tags:
+  - Identity Governance
+  - Identity Administration
+  - Access Management
+  - Privileged Access Management
+  - Segregation of Duties
+  - IGA
+  - Security
+apis:
+  - aid: saviynt:saviynt-enterprise-identity-cloud-api
+    name: Saviynt Enterprise Identity Cloud API
+    description: REST API for the Saviynt Enterprise Identity Cloud (EIC) platform, providing endpoints for identity administration, access requests, SOD policy management, identity analytics, rule engineering, delegated administration, and common IGA utilities. Authentication uses OAuth 2.0 bearer tokens (JWT) obtained via the login endpoint.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.saviynt.com/apis/rest/
+    baseURL: https://{tenant}.saviyntcloud.com/ECM/api
+    tags:
+      - Identity Governance
+      - Access Requests
+      - User Management
+      - Entitlements
+      - SOD
+      - Certifications
+      - Privileged Access
+    properties:
+      - type: Documentation
+        url: https://developers.saviynt.com/apis/rest/
+      - type: OpenAPI
+        url: https://github.com/vivek9237/saviynt-api-reference/blob/main/docs/saviynt-eic-api_openapi3.yaml
+      - type: GettingStarted
+        url: https://developers.saviynt.com/apis/rest/getting-started/
+      - type: Authentication
+        url: https://developers.saviynt.com/apis/rest/reference/5.0/auth/
+      - type: BestPractices
+        url: https://developers.saviynt.com/apis/rest/best-practices/
+      - type: APIReference
+        url: https://developers.saviynt.com/apis/rest/reference/5.0/saviynt-enterprise-identity-cloud-api-reference/
+      - type: Endpoints
+        url: https://developers.saviynt.com/apis/rest/reference/5.0/endpoints/
+common:
+  - type: Website
+    url: https://saviynt.com
+  - type: Documentation
+    url: https://docs.saviyntcloud.com/bundle/API-Reference-Guide/page/Content/API-References.htm
+  - type: GitHubOrg
+    url: https://github.com/saviynt
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/saviynt
+  - type: Blog
+    url: https://saviynt.com/blog
+  - type: Pricing
+    url: https://saviynt.com/contact-us/
+  - type: StatusPage
+    url: https://status.saviynt.com/
+  - type: X
+    url: https://x.com/saviynt
+  - type: Plans
+    url: plans/saviynt-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/saviynt-rate-limits.yml
+  - type: FinOps
+    url: finops/saviynt-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

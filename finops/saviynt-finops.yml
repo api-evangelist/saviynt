@@ -1,0 +1,58 @@
+name: Saviynt FinOps
+description: Financial operations guidance for organizations consuming Saviynt Enterprise Identity Cloud APIs. Saviynt is sold as an enterprise SaaS platform with custom contract-based pricing. API usage is included within the platform subscription — there are no separate per-call or consumption-based API fees publicly documented. Cost optimization focuses on efficient API usage patterns, appropriate license tier selection, and connector/integration footprint management.
+url: https://saviynt.com/contact-us/
+created: "2026-06-13"
+modified: "2026-06-13"
+costModel:
+  type: subscription
+  billingCycle: annual
+  pricingVisibility: private
+  description: Saviynt is priced as an enterprise annual subscription. API access is bundled into the platform license. No public per-API-call pricing exists. Custom quotes are based on user count, modules purchased (IGA, PAM, AAG, ISPM), and support tier.
+
+costDrivers:
+  - name: Licensed User Count
+    description: The primary cost driver is the number of identities (users) managed on the platform. Larger identity populations increase subscription costs.
+    impact: high
+
+  - name: Modules Purchased
+    description: Saviynt offers modular capabilities — IGA, PAM, Application Access Governance (AAG), Identity Security Posture Management (ISPM). Each additional module increases contract cost.
+    impact: high
+
+  - name: Integration Connectors
+    description: The number and type of connectors to target systems (cloud apps, on-premises directories, databases) may affect implementation costs and connector licensing.
+    impact: medium
+
+  - name: Support Tier
+    description: Premium SLA and dedicated support options add to subscription cost over standard support tiers.
+    impact: medium
+
+  - name: API Call Volume
+    description: API usage is bundled into the subscription; however, excessive API traffic may trigger performance throttling in shared tenants, potentially requiring a higher-tier tenant configuration.
+    impact: low
+
+optimization:
+  - strategy: Token Caching
+    description: Reuse OAuth 2.0 access tokens for their full 3600-second lifetime to reduce authentication overhead and avoid unnecessary token generation calls.
+
+  - strategy: Batch Operations
+    description: Use bulk/batch API endpoints for provisioning and de-provisioning operations rather than individual per-user calls to reduce total API call volume and improve throughput.
+
+  - strategy: Pagination Tuning
+    description: Use appropriate page sizes for list and search APIs to balance response time against the number of API calls required for large data sets.
+
+  - strategy: Right-size License Tier
+    description: Audit which Saviynt modules are actively used. Avoid paying for Premium tier capabilities (ISPM, AAG, AI analytics) if only core IGA features are needed.
+
+  - strategy: Connector Rationalization
+    description: Audit the number of active connectors. Decommission unused or low-value integrations to reduce implementation complexity and potential per-connector costs.
+
+  - strategy: Saviynt Exchange Integrations
+    description: Leverage pre-built Saviynt Exchange marketplace integrations rather than building custom connectors, reducing development and maintenance costs.
+
+references:
+  - url: https://saviynt.com/contact-us/
+    description: Saviynt Sales Contact for Custom Pricing
+  - url: https://exchange.saviynt.com/
+    description: Saviynt Exchange Marketplace for Pre-built Integrations
+  - url: https://developers.saviynt.com/apis/rest/best-practices/
+    description: API Best Practices for Efficient Usage
