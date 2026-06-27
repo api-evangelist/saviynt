@@ -2,10 +2,20 @@
   "repo": "saviynt",
   "feeds": [
     {
+      "source": "https://saviynt.com/blog/atom.xml",
+      "feed_url": "https://saviynt.com/blog/atom.xml",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    },
+    {
       "source": "https://www.linkedin.com/company/saviynt",
-      "error": "HTTPError"
+      "feed_url": "https://www.linkedin.com/company/saviynt",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 6
 }
