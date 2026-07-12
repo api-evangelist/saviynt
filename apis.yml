@@ -71,6 +71,10 @@ apis:
       - type: JSONLDContext
         url: json-ld/saviynt-context.jsonld
 common:
+  - type: TrustCenter
+    url: security/saviynt-trust-center.yml
+  - type: DomainSecurity
+    url: security/saviynt-domain-security.yml
   - type: Website
     url: https://saviynt.com
   - type: Documentation
