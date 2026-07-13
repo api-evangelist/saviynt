@@ -5,17 +5,14 @@
       "source": "https://saviynt.com/blog/atom.xml",
       "feed_url": "https://saviynt.com/blog/atom.xml",
       "title": "",
-      "saved": 2,
+      "saved": 0,
       "method": "feed"
     },
     {
       "source": "https://www.linkedin.com/company/saviynt",
-      "feed_url": "https://www.linkedin.com/company/saviynt",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:03:07Z",
-  "post_count": 6
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 13
 }
