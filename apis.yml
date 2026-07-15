@@ -71,6 +71,8 @@ apis:
       - type: JSONLDContext
         url: json-ld/saviynt-context.jsonld
 common:
+  - type: AgenticAccess
+    url: agentic-access/saviynt-agentic-access.yml
   - type: TrustCenter
     url: security/saviynt-trust-center.yml
   - type: DomainSecurity
