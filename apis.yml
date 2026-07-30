@@ -1,7 +1,19 @@
 aid: saviynt
 name: Saviynt
 description: Saviynt is an identity governance and administration (IGA) platform providing REST APIs for managing user identities, access requests, SOD violations, certifications, and privileged access controls across enterprise environments. The Saviynt Enterprise Identity Cloud API enables CRUD operations on user, account, and entitlement records; access request and approval workflows; rule engineering; segregation of duties policy management; and identity analytics.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/saviynt.png
 url: https://raw.githubusercontent.com/api-evangelist/saviynt/refs/heads/main/apis.yml
 created: "2026-06-13"
 modified: "2026-06-13"
@@ -15,61 +27,53 @@ tags:
   - IGA
   - Security
 apis:
-  - aid: saviynt:saviynt-enterprise-identity-cloud-api
-    name: Saviynt Enterprise Identity Cloud API
-    description: REST API for the Saviynt Enterprise Identity Cloud (EIC) platform, providing endpoints for identity administration, access requests, SOD policy management, identity analytics, rule engineering, delegated administration, and common IGA utilities. Authentication uses OAuth 2.0 bearer tokens (JWT) obtained via the login endpoint.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.saviynt.com/apis/rest/
-    baseURL: https://{tenant}.saviyntcloud.com/ECM/api
-    tags:
-      - Identity Governance
-      - Access Requests
-      - User Management
-      - Entitlements
-      - SOD
-      - Certifications
-      - Privileged Access
-    properties:
-      - type: Documentation
-        url: https://developers.saviynt.com/apis/rest/
-      - type: OpenAPI
-        url: https://github.com/vivek9237/saviynt-api-reference/blob/main/docs/saviynt-eic-api_openapi3.yaml
-      - type: GettingStarted
-        url: https://developers.saviynt.com/apis/rest/getting-started/
-      - type: Authentication
-        url: https://developers.saviynt.com/apis/rest/reference/5.0/auth/
-      - type: BestPractices
-        url: https://developers.saviynt.com/apis/rest/best-practices/
-      - type: APIReference
-        url: https://developers.saviynt.com/apis/rest/reference/5.0/saviynt-enterprise-identity-cloud-api-reference/
-      - type: Endpoints
-        url: https://developers.saviynt.com/apis/rest/reference/5.0/endpoints/
-      - type: OpenAPI
-        url: openapi/saviynt-eic-api-openapi.yaml
-      - type: JSONSchema
-        url: json-schema/FetchControlListRequest.json
-      - type: JSONSchema
-        url: json-schema/FetchControlListResponse.json
-      - type: JSONSchema
-        url: json-schema/FetchControlListControl.json
-      - type: JSONSchema
-        url: json-schema/FetchControlDetailsRequest.json
-      - type: JSONSchema
-        url: json-schema/RunAnalyticsControlsRequest.json
-      - type: JSONSchema
-        url: json-schema/FetchRuntimeControlsDataRequest.json
-      - type: JSONSchema
-        url: json-schema/FetchRuntimeControlsDataV2Request.json
-      - type: JSONSchema
-        url: json-schema/FetchControlAttributesRequest.json
-      - type: JSONSchema
-        url: json-schema/FetchControlListESRequest.json
-      - type: JSONSchema
-        url: json-schema/FetchControlDetailsESRequest.json
-      - type: Vocabulary
-        url: vocabulary/saviynt-vocabulary.json
-      - type: JSONLDContext
-        url: json-ld/saviynt-context.jsonld
+- aid: saviynt:saviynt-analytics-api
+  name: Saviynt Analytics API
+  description: The Analytics API from Saviynt — 8 operation(s) for analytics.
+  humanURL: https://developers.saviynt.com/apis/rest/
+  baseURL: https://{tenant}.saviyntcloud.com/ECM/api
+  tags:
+  - Analytics
+  properties:
+  - type: OpenAPI
+    url: openapi/saviynt-analytics-api-openapi.yml
+  - type: Documentation
+    url: https://developers.saviynt.com/apis/rest/
+  - type: GettingStarted
+    url: https://developers.saviynt.com/apis/rest/getting-started/
+  - type: Authentication
+    url: https://developers.saviynt.com/apis/rest/reference/5.0/auth/
+  - type: BestPractices
+    url: https://developers.saviynt.com/apis/rest/best-practices/
+  - type: APIReference
+    url: >-
+      https://developers.saviynt.com/apis/rest/reference/5.0/saviynt-enterprise-identity-cloud-api-reference/
+  - type: Endpoints
+    url: https://developers.saviynt.com/apis/rest/reference/5.0/endpoints/
+  - type: JSONSchema
+    url: json-schema/FetchControlListRequest.json
+  - type: JSONSchema
+    url: json-schema/FetchControlListResponse.json
+  - type: JSONSchema
+    url: json-schema/FetchControlListControl.json
+  - type: JSONSchema
+    url: json-schema/FetchControlDetailsRequest.json
+  - type: JSONSchema
+    url: json-schema/RunAnalyticsControlsRequest.json
+  - type: JSONSchema
+    url: json-schema/FetchRuntimeControlsDataRequest.json
+  - type: JSONSchema
+    url: json-schema/FetchRuntimeControlsDataV2Request.json
+  - type: JSONSchema
+    url: json-schema/FetchControlAttributesRequest.json
+  - type: JSONSchema
+    url: json-schema/FetchControlListESRequest.json
+  - type: JSONSchema
+    url: json-schema/FetchControlDetailsESRequest.json
+  - type: Vocabulary
+    url: vocabulary/saviynt-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/saviynt-context.jsonld
 common:
   - type: AgenticAccess
     url: agentic-access/saviynt-agentic-access.yml
