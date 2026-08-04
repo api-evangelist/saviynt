@@ -1,0 +1,14 @@
+{
+  "provider": "saviynt",
+  "sources": [
+    "saviynt-analytics-api-openapi.yml"
+  ],
+  "outputs": [
+    "saviynt-analytics-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
