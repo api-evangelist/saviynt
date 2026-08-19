@@ -1,0 +1,130 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Saviynt Enterprise Identity Cloud (EIC) Analytics API",
+    "version": "5.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Analytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch List of Analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchControlList",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Fetch List of Analytics"
+        },
+        {
+          "info": {
+            "name": "Fetch Analytics Details",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchControlDetails",
+            "body": {
+              "type": "multipart-form",
+              "data": []
+            }
+          },
+          "docs": "This web service API is used to fetch the details of analytics controls."
+        },
+        {
+          "info": {
+            "name": "Run Analytics Controls",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/runAnalyticsControls",
+            "body": {
+              "type": "form-urlencoded",
+              "data": []
+            }
+          },
+          "docs": "Run Analytics Controls"
+        },
+        {
+          "info": {
+            "name": "Fetch Runtime Controls Data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchRuntimeControlsData",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Fetch Runtime Controls Data"
+        },
+        {
+          "info": {
+            "name": "Fetch Runtime Controls Data V2",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchRuntimeControlsDataV2",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Fetch Runtime Controls Data V2"
+        },
+        {
+          "info": {
+            "name": "Fetch Control Attributes",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchControlAttributes",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "This API is used for fetching the details of dynamic attributes associated with an analytics control. This can be used for both Elasticsearch and Database analytics."
+        },
+        {
+          "info": {
+            "name": "Fetch List of Analytics ES",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchControlListES"
+          },
+          "docs": "This method fetches a list of Analytic Controls in Elastic.\n\nNote: Security is based on owner, delegate, `ROLE_ADMIN`, SAV_ROLE's analytics ES category."
+        },
+        {
+          "info": {
+            "name": "Fetch Analytics Details ES",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://example.saviyntcloud.com/ECM/api/v5/fetchControlDetailsES"
+          },
+          "docs": "This web service API is used to fetch the details of analytics controls ES, includes the Offset value in the response."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

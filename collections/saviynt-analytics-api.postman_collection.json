@@ -1,0 +1,669 @@
+{
+  "item": [
+    {
+      "id": "cee58100-2691-406f-acb7-fca4bac9ea3c",
+      "name": "Analytics",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ec84724a-7859-490d-b89a-191bcd3c0248",
+          "name": "Fetch List of Analytics",
+          "request": {
+            "name": "Fetch List of Analytics",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "fetchControlList"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"application\": \"<string>\",\n  \"category\": \"<string>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "5960434e-4de8-4f7f-ba7d-4dfb04016bc2",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "fetchControlList"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"application\": \"<string>\",\n  \"category\": \"<string>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"msg\": \"string\",\n  \"controls\": [\n    {\n      \"analyticsId\": 0,\n      \"application\": \"string\",\n      \"analyticsName\": \"string\",\n      \"controlid\": \"string\",\n      \"category\": \"string\",\n      \"description\": \"string\",\n      \"lastRun\": \"string\",\n      \"Risk\": \"string\",\n      \"recommendations\": \"string\",\n      \"conflictCount\": 0\n    },\n    {\n      \"analyticsId\": 0,\n      \"application\": \"string\",\n      \"analyticsName\": \"string\",\n      \"controlid\": \"string\",\n      \"category\": \"string\",\n      \"description\": \"string\",\n      \"lastRun\": \"string\",\n      \"Risk\": \"string\",\n      \"recommendations\": \"string\",\n      \"conflictCount\": 0\n    }\n  ],\n  \"displayCount\": 8454,\n  \"errorCode\": \"string\",\n  \"totalCount\": 723\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5a499d88-1dcf-43d1-8c18-56282e1a0585",
+          "name": "Fetch Analytics Details",
+          "request": {
+            "name": "Fetch Analytics Details",
+            "description": {
+              "content": "This web service API is used to fetch the details of analytics controls.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "fetchControlDetails"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "controlId",
+                  "value": "<string>",
+                  "type": "text",
+                  "description": "(Required) "
+                },
+                {
+                  "key": "max",
+                  "value": "<string>",
+                  "type": "text",
+                  "description": ""
+                },
+                {
+                  "key": "offset",
+                  "value": "<string>",
+                  "type": "text",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "ae11bb42-2425-46e5-9834-c58b936c592f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "fetchControlDetails"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "controlId",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "key": "max",
+                      "value": "<string>",
+                      "type": "text"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "key": "offset",
+                      "value": "<string>",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1f132a01-3260-4d6d-83b7-9520359dd632",
+          "name": "Run Analytics Controls",
+          "request": {
+            "name": "Run Analytics Controls",
+            "description": {},
+            "url": {
+              "path": [
+                "runAnalyticsControls"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "jobgroup",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "jobname",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "analyticsCategories",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "analyticsApplications",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "analyticssubcategories",
+                  "value": "<string>"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b5fbc42c-8f2a-47bb-b148-774b9692a800",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "runAnalyticsControls"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "jobgroup",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "jobname",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) ",
+                        "type": "text/plain"
+                      },
+                      "key": "analyticsCategories",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "analyticsApplications",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "key": "analyticssubcategories",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b86af9bb-0953-4336-ab48-ab11377da3a6",
+          "name": "Fetch Runtime Controls Data",
+          "request": {
+            "name": "Fetch Runtime Controls Data",
+            "description": {},
+            "url": {
+              "path": [
+                "fetchRuntimeControlsData"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"analyticsid\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"attributes\": \"<object>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\",\n  \"loggedinuser\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "66ae2a92-581d-4e86-a8a5-5e7aa1e4193c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "fetchRuntimeControlsData"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"analyticsid\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"attributes\": \"<object>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\",\n  \"loggedinuser\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f2ef5aa0-dad0-4c9c-ab94-8c833d927bbc",
+          "name": "Fetch Runtime Controls Data V2",
+          "request": {
+            "name": "Fetch Runtime Controls Data V2",
+            "description": {},
+            "url": {
+              "path": [
+                "fetchRuntimeControlsDataV2"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requestor\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"analyticsid\": \"<string>\",\n  \"attributes\": \"<object>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "17bde119-8161-442b-9534-f07cd8f04c3b",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "fetchRuntimeControlsDataV2"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"requestor\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"analyticsid\": \"<string>\",\n  \"attributes\": \"<object>\",\n  \"max\": \"<string>\",\n  \"offset\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ca7a3218-9a29-418c-aa07-85e0863808a3",
+          "name": "Fetch Control Attributes",
+          "request": {
+            "name": "Fetch Control Attributes",
+            "description": {
+              "content": "This API is used for fetching the details of dynamic attributes associated with an analytics control. This can be used for both Elasticsearch and Database analytics.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "fetchControlAttributes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"analyticstype\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"id\": \"<string>\",\n  \"offset\": \"<string>\",\n  \"max\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "3a07330a-726e-4672-bda0-9b4446a2a8c5",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "fetchControlAttributes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"analyticstype\": \"<string>\",\n  \"analyticsname\": \"<string>\",\n  \"id\": \"<string>\",\n  \"offset\": \"<string>\",\n  \"max\": \"<string>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bb41fbac-c0a4-45f2-895d-fe3b65be2629",
+          "name": "Fetch List of Analytics ES",
+          "request": {
+            "name": "Fetch List of Analytics ES",
+            "description": {
+              "content": "This method fetches a list of Analytic Controls in Elastic.\n\nNote: Security is based on owner, delegate, `ROLE_ADMIN`, SAV_ROLE's analytics ES category.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "fetchControlListES"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d7f0f7fd-581b-430a-a110-41139ba7ea70",
+          "name": "Fetch Analytics Details ES",
+          "request": {
+            "name": "Fetch Analytics Details ES",
+            "description": {
+              "content": "This web service API is used to fetch the details of analytics controls ES, includes the Offset value in the response.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "fetchControlDetailsES"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://example.saviyntcloud.com/ECM/api/v5",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "ea7d35cf-184b-41fd-ad4e-a909c3541ad6",
+    "name": "Saviynt Enterprise Identity Cloud (EIC) Analytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
