@@ -1,7 +1,7 @@
 {
   "provider": "saviynt",
   "sources": [
-    "saviynt-analytics-api-openapi.yml"
+    "_original/saviynt-eic-api-openapi.yaml"
   ],
   "outputs": [
     "saviynt-analytics-api-openapi.yml"
@@ -9,6 +9,13 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "saviynt-eic-api-openapi.yaml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "saviynt-eic-api-openapi.yaml: declared missing tag: Analytics",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "saviynt-analytics-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
