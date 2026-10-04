@@ -87,6 +87,9 @@ apis:
   - type: JSONLDContext
     url: json-ld/saviynt-context.jsonld
 common:
+  - type: CapabilityMap
+    url: capabilities/saviynt-capability-edges.yml
+    name: Saviynt Business Capability Map
   - type: AgenticAccess
     url: agentic-access/saviynt-agentic-access.yml
   - type: TrustCenter

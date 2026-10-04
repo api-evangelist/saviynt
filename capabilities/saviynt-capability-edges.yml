@@ -1,0 +1,26 @@
+slug: saviynt
+provider: Saviynt
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Analytics
+  spec_file: saviynt-analytics-api-openapi.yml
+  capability_id: BC-620.10
+  capability_id_l1: BC-620
+  capability_name: Security Strategy & Governance Management
+  confidence: 0.7
+  evidence: POST /runAnalyticsControls  Run Analytics Controls; FetchControlAttributesRequest
+  reason: Vendor is an identity governance platform; this tag runs and reports on identity 'controls'
+    (analytics controls, control details/attributes) used for SOD and access governance. Best fits security
+    governance/GRC under Cybersecurity Management; sub-capability choice is somewhat ambiguous between
+    governance and IAM, hence moderate confidence.
