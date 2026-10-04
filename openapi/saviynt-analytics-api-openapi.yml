@@ -120,26 +120,67 @@ paths:
       description: This web service API is used to fetch the details of analytics controls ES, includes the Offset value in the response.
 components:
   schemas:
-    FetchControlDetailsRequest:
-      title: FetchControlDetails
+    FetchRuntimeControlsDataV2Request:
+      title: FetchRuntimeControlsDataV2
       x-stoplight:
-        id: 6ns86hzu7sdd8
+        id: y72ldde5mw2fm
       type: object
       properties:
-        controlId:
+        requestor:
           type: string
           x-stoplight:
-            id: 3v79rbtw8qy9d
+            id: 8lwakmt6icwf0
+        analyticsname:
+          type: string
+          x-stoplight:
+            id: bcoap517ja2dr
+        analyticsid:
+          type: string
+          x-stoplight:
+            id: oamryaepvpj6y
+        attributes:
+          type: object
+          x-stoplight:
+            id: qh4y4bhhckmjs
         max:
           type: string
           x-stoplight:
-            id: de4luh6fct1in
+            id: x1fpaihq38wtb
         offset:
           type: string
           x-stoplight:
-            id: 64sybht5vrikh
+            id: lcbkfr9j2lz5b
+    FetchControlAttributesRequest:
+      title: FetchControlAttributesRequest
+      x-stoplight:
+        id: iasaxhi5b6ra5
+      type: object
+      properties:
+        analyticstype:
+          type: string
+          x-stoplight:
+            id: c25fj8an0lke0
+          enum:
+          - ES
+          - DB
+        analyticsname:
+          type: string
+          x-stoplight:
+            id: c25fj8an0lke0
+        id:
+          type: string
+          x-stoplight:
+            id: ccnguyxlr43nw
+        offset:
+          type: string
+          x-stoplight:
+            id: j1hx738kzy1wi
+        max:
+          type: string
+          x-stoplight:
+            id: t60xlmb2ol31w
       required:
-      - controlId
+      - analyticstype
     FetchControlListControl:
       title: FetchControlListControl
       x-stoplight:
@@ -197,89 +238,6 @@ components:
         Risk: string
         recommendations: string
         conflictCount: 0
-    FetchControlAttributesRequest:
-      title: FetchControlAttributesRequest
-      x-stoplight:
-        id: iasaxhi5b6ra5
-      type: object
-      properties:
-        analyticstype:
-          type: string
-          x-stoplight:
-            id: c25fj8an0lke0
-          enum:
-          - ES
-          - DB
-        analyticsname:
-          type: string
-          x-stoplight:
-            id: c25fj8an0lke0
-        id:
-          type: string
-          x-stoplight:
-            id: ccnguyxlr43nw
-        offset:
-          type: string
-          x-stoplight:
-            id: j1hx738kzy1wi
-        max:
-          type: string
-          x-stoplight:
-            id: t60xlmb2ol31w
-      required:
-      - analyticstype
-    FetchControlListRequest:
-      title: FetchControlListRequest
-      x-stoplight:
-        id: j1hfpwqxneu11
-      type: object
-      properties:
-        application:
-          type: string
-          x-stoplight:
-            id: x5lnjaqwxhaas
-        category:
-          type: string
-          x-stoplight:
-            id: bui0yfkd4lwoy
-        max:
-          type: string
-          x-stoplight:
-            id: 8s25cgick27fu
-        offset:
-          type: string
-          x-stoplight:
-            id: h433q0x239tr5
-    FetchRuntimeControlsDataV2Request:
-      title: FetchRuntimeControlsDataV2
-      x-stoplight:
-        id: y72ldde5mw2fm
-      type: object
-      properties:
-        requestor:
-          type: string
-          x-stoplight:
-            id: 8lwakmt6icwf0
-        analyticsname:
-          type: string
-          x-stoplight:
-            id: bcoap517ja2dr
-        analyticsid:
-          type: string
-          x-stoplight:
-            id: oamryaepvpj6y
-        attributes:
-          type: object
-          x-stoplight:
-            id: qh4y4bhhckmjs
-        max:
-          type: string
-          x-stoplight:
-            id: x1fpaihq38wtb
-        offset:
-          type: string
-          x-stoplight:
-            id: lcbkfr9j2lz5b
     RunAnalyticsControlsRequest:
       title: RunAnalyticsControlsRequest
       x-stoplight:
@@ -340,6 +298,48 @@ components:
           type: string
           x-stoplight:
             id: cz04q6509vxtx
+    FetchControlDetailsRequest:
+      title: FetchControlDetails
+      x-stoplight:
+        id: 6ns86hzu7sdd8
+      type: object
+      properties:
+        controlId:
+          type: string
+          x-stoplight:
+            id: 3v79rbtw8qy9d
+        max:
+          type: string
+          x-stoplight:
+            id: de4luh6fct1in
+        offset:
+          type: string
+          x-stoplight:
+            id: 64sybht5vrikh
+      required:
+      - controlId
+    FetchControlListRequest:
+      title: FetchControlListRequest
+      x-stoplight:
+        id: j1hfpwqxneu11
+      type: object
+      properties:
+        application:
+          type: string
+          x-stoplight:
+            id: x5lnjaqwxhaas
+        category:
+          type: string
+          x-stoplight:
+            id: bui0yfkd4lwoy
+        max:
+          type: string
+          x-stoplight:
+            id: 8s25cgick27fu
+        offset:
+          type: string
+          x-stoplight:
+            id: h433q0x239tr5
     FetchControlListResponse:
       title: FetchControlListResponse
       x-stoplight:

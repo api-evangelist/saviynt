@@ -1,0 +1,18 @@
+generated: '2026-10-04'
+method: generated
+generator: extract-docs-artifacts.py skills (local)
+source: openapi/saviynt-openapi.yaml
+skills:
+- file: skills/saviynt-create-or-view-connection.md
+  name: saviynt-create-or-view-connection
+  api: openapi/saviynt-openapi.yaml
+  operations:
+  - createOrUpdate
+  - getConnectionDetails
+- file: skills/saviynt-analytics-run.md
+  name: saviynt-analytics-run
+  api: openapi/saviynt-analytics-api-openapi.yml
+  operations:
+  - fetchControlList
+  - fetchControlDetails
+  - runAnalyticsControls

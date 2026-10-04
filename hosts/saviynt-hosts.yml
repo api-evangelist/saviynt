@@ -1,0 +1,194 @@
+generated: '2026-10-04'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 16
+  own: 9
+  other_domain: 4
+  platform: 3
+  roles:
+  - api
+  - docs
+  - other
+  - partner
+  - portal
+  - status
+  - website
+hosts:
+- host: api.saviynt.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: saviynt.com
+  role: api
+  relation: own
+- host: api.saviyntcloud.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: saviyntcloud.com
+  role: api
+  relation: other-domain
+- host: developers.saviynt.com
+  found_by:
+  - apis[]
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: saviynt.com
+  role: portal
+  relation: own
+- host: docs.saviyntcloud.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - documentation
+  vendor: gitbook
+  registrable_domain: saviyntcloud.com
+  role: docs
+  relation: other-domain
+- host: events.saviynt.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: saviynt.com
+  role: other
+  relation: own
+- host: exchange.saviynt.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  platform: shopify.com
+  registrable_domain: saviynt.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrg
+  serves: []
+  registrable_domain: github.com
+  role: other
+  relation: platform
+- host: knowledge.saviynt.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: saviynt.com
+  role: other
+  relation: own
+- host: partners.saviynt.com
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: Saviynt Accelerate Partner Program
+  status: 200
+  registrable_domain: saviynt.com
+  role: partner
+  relation: own
+- host: saviynt.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - PrivacyPolicy
+  - Newsroom
+  - Website
+  - Blog
+  - Pricing
+  - Support
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: saviynt.com
+  role: website
+  relation: own
+- host: saviyntsso.b2clogin.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: b2clogin.com
+  role: other
+  relation: other-domain
+- host: status.saviynt.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: saviynt.com
+  role: status
+  relation: own
+- host: trust.saviynt.com
+  found_by:
+  - pointer
+  - well-known
+  types:
+  - Compliance
+  serves: []
+  platform: app.safebase.io
+  registrable_domain: saviynt.com
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - pointer
+  types:
+  - X
+  serves: []
+  registrable_domain: x.com
+  role: other
+  relation: platform
+- host: '{tenant}.saviyntcloud.com'
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: saviyntcloud.com
+  role: other
+  relation: other-domain

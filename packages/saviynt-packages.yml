@@ -1,0 +1,16 @@
+generated: '2026-10-04'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (agentic-access/saviynt-agentic-access.yml,
+  finops/saviynt-finops.yml, linkedin.com, plans/saviynt-plans-pricing.yml, rate-limits/saviynt-rate-limits.yml, saviynt.com, saviyntcloud.com,
+  security/saviynt-domain-security.yml, security/saviynt-trust-center.yml, x.com) or its accepted GitHub org.'
+packages:
+- name: saviynt
+  registry: npm
+  url: https://www.npmjs.com/package/saviynt
+  language: JavaScript
+  official: true
+  version: 1.0.0
+  published: '2024-01-18'
+  evidence: metadata names saviynt.com

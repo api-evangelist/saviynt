@@ -1,6 +1,9 @@
 aid: saviynt
+
 name: Saviynt
+
 description: Saviynt is an identity governance and administration (IGA) platform providing REST APIs for managing user identities, access requests, SOD violations, certifications, and privileged access controls across enterprise environments. The Saviynt Enterprise Identity Cloud API enables CRUD operations on user, account, and entitlement records; access request and approval workflows; rule engineering; segregation of duties policy management; and identity analytics.
+
 deliveryModel:
   model: saas
   open_source: false
@@ -13,6 +16,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -25,11 +29,17 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/saviynt.png
+
 url: https://raw.githubusercontent.com/api-evangelist/saviynt/refs/heads/main/apis.yml
+
 created: "2026-06-13"
+
 modified: "2026-06-13"
+
 specificationVersion: '0.23'
+
 tags:
   - Identity Governance
   - Identity Administration
@@ -38,6 +48,75 @@ tags:
   - Segregation of Duties
   - IGA
   - Security
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+
+common:
+  - type: Spectral
+    url: rules/saviynt-rules.yml
+  - type: Spectral
+    url: rules/saviynt-jsonschema-spectral-rules.yml
+  - type: JSONLD
+    url: json-ld/saviynt-context.jsonld
+  - type: Vocabulary
+    url: vocabulary/saviynt-vocabulary.yml
+  - type: AgentSkill
+    url: skills/_index.yml
+  - type: DataModel
+    url: data-model/saviynt-data-model.yml
+  - type: Compliance
+    url: https://trust.saviynt.com/
+  - type: Conformance
+    url: conformance/saviynt-conformance.yml
+  - type: LLMsTxt
+    url: llms/saviynt-llms.txt
+  - type: WellKnown
+    url: well-known/saviynt-well-known.yml
+  - type: Hosts
+    url: hosts/saviynt-hosts.yml
+  - type: Vendors
+    url: vendors/saviynt-vendors.yml
+  - type: SDKs
+    url: packages/saviynt-packages.yml
+  - type: Packages
+    url: packages/saviynt-packages.yml
+  - type: PrivacyPolicy
+    url: https://saviynt.com/privacy-policy?hsLang=en
+  - type: Newsroom
+    url: https://saviynt.com/newsroom
+  - type: AgenticAccess
+    url: agentic-access/saviynt-agentic-access.yml
+  - type: TrustCenter
+    url: security/saviynt-trust-center.yml
+  - type: DomainSecurity
+    url: security/saviynt-domain-security.yml
+  - type: Website
+    url: https://saviynt.com
+  - type: Documentation
+    url: https://docs.saviyntcloud.com/bundle/API-Reference-Guide/page/Content/API-References.htm
+  - type: GitHubOrg
+    url: https://github.com/saviynt
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/saviynt
+  - type: Blog
+    url: https://saviynt.com/blog
+  - type: Pricing
+    url: https://saviynt.com/contact-us/
+  - type: StatusPage
+    url: https://status.saviynt.com/
+  - type: X
+    url: https://x.com/saviynt
+  - type: Support
+    url: https://saviynt.com/services/customer-support
+  - type: Plans
+    url: plans/saviynt-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/saviynt-rate-limits.yml
+  - type: FinOps
+    url: finops/saviynt-finops.yml
+
 apis:
 - aid: saviynt:saviynt-analytics-api
   name: Saviynt Analytics API
@@ -86,35 +165,27 @@ apis:
     url: vocabulary/saviynt-vocabulary.json
   - type: JSONLDContext
     url: json-ld/saviynt-context.jsonld
-common:
-  - type: AgenticAccess
-    url: agentic-access/saviynt-agentic-access.yml
-  - type: TrustCenter
-    url: security/saviynt-trust-center.yml
-  - type: DomainSecurity
-    url: security/saviynt-domain-security.yml
-  - type: Website
-    url: https://saviynt.com
-  - type: Documentation
-    url: https://docs.saviyntcloud.com/bundle/API-Reference-Guide/page/Content/API-References.htm
-  - type: GitHubOrg
-    url: https://github.com/saviynt
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/saviynt
-  - type: Blog
-    url: https://saviynt.com/blog
-  - type: Pricing
-    url: https://saviynt.com/contact-us/
-  - type: StatusPage
-    url: https://status.saviynt.com/
-  - type: X
-    url: https://x.com/saviynt
-  - type: Plans
-    url: plans/saviynt-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/saviynt-rate-limits.yml
-  - type: FinOps
-    url: finops/saviynt-finops.yml
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- aid: saviynt:saviynt-connections-api
+  name: Saviynt Connections API
+  description: The connections API from Saviynt — 3 operation(s) for connections.
+  humanURL: https://developers.saviynt.com/apis/rest/
+  baseURL: https://{tenant}.saviyntcloud.com/ECM/api
+  tags:
+  - connections
+  properties:
+  - type: OpenAPI
+    url: openapi/saviynt-connections-api-openapi.yml
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine-readable contract could be found despite accessible documentation.
+  evidence:
+    - url: https://developers.saviynt.com/apis/rest/
+      status: null
+  checked: '2026-10-04'
+x-enrichment:
+  date: '2026-10-04'
+  status: enriched
+  artifacts_added: 21
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
