@@ -8,7 +8,7 @@ description: Saviynt Enterprise Identity Cloud REST API rate limiting details. S
 url: https://developers.saviynt.com/apis/rest/best-practices/
 created: "2026-06-13"
 modified: "2026-06-13"
-rateLimits:
+limits:
   - name: OAuth Token Expiration
     description: Access tokens obtained via the /ECM/api/login endpoint are valid for 3600 seconds (60 minutes). After expiration, a new token must be obtained or refreshed via the /ECM/oauth/access_token endpoint.
     limit: 3600

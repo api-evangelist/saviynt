@@ -1,0 +1,181 @@
+generated: '2026-10-04'
+method: derived
+generator: derive-vocabulary.py
+source:
+- openapi/saviynt-analytics-api-openapi.yml
+- openapi/saviynt-openapi.yaml
+vocabulary:
+  name: Saviynt Domain Vocabulary
+  description: 'Terms declared by Saviynt''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-04'
+  terms:
+  - term: FetchControlDetails
+    definition: 'Object declared by the contract with fields: controlId, max, offset.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchControlDetailsRequest
+  - term: FetchControlListControl
+    definition: 'Object declared by the contract with fields: analyticsId, application, analyticsName, controlid, category, description, lastRun,
+      Risk, recommendations, conflictCount.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchControlListControl
+  - term: FetchControlAttributesRequest
+    definition: 'Object declared by the contract with fields: analyticstype, analyticsname, id, offset, max.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchControlAttributesRequest
+  - term: FetchControlListRequest
+    definition: 'Object declared by the contract with fields: application, category, max, offset.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchControlListRequest
+  - term: FetchRuntimeControlsDataV2
+    definition: 'Object declared by the contract with fields: requestor, analyticsname, analyticsid, attributes, max, offset.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchRuntimeControlsDataV2Request
+  - term: RunAnalyticsControlsRequest
+    definition: 'Object declared by the contract with fields: jobgroup, jobname, analyticsCategories, analyticsApplications, analyticssubcategories.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/RunAnalyticsControlsRequest
+  - term: FetchRuntimeControlsDataRequest
+    definition: 'Object declared by the contract with fields: analyticsid, analyticsname, attributes, max, offset, loggedinuser.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchRuntimeControlsDataRequest
+  - term: FetchControlListResponse
+    definition: 'Object declared by the contract with fields: msg, controls, displayCount, errorCode, totalCount.'
+    tags:
+    - Object
+    source: openapi/saviynt-analytics-api-openapi.yml#/components/schemas/FetchControlListResponse
+  - term: BaseConnector
+    definition: 'Object declared by the contract with fields: connectionName, connectiontype, connectionDescription, defaultSavRole, emailTemplate,
+      sslCertificate, vaultConnection, vaultConfiguration, saveinvault.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/BaseConnector
+  - term: CreateOrUpdateResponse
+    definition: 'Object declared by the contract with fields: connectionKey, msg, errorCode.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/CreateOrUpdateResponse
+  - term: getConnectionsResponse
+    definition: 'Object declared by the contract with fields: msg, errorCode, displayCount, totalCount, ConnectionList.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/getConnectionsResponse
+  - term: getConnectionDetails
+    definition: 'Object declared by the contract with fields: msg, emailtemplate, updatedby, connectionname, connectionkey, description, connectiontype,
+      createdon, createdby, errorcode, status, defaultsavroles.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/getConnectionDetails
+  - term: ConnectionTimeoutConfig
+    definition: 'Object declared by the contract with fields: retryWait, tokenRefreshMaxTryCount, retryFailureStatusCode, retryWaitMaxValue, retryCount,
+      readTimeout, connectionTimeout, authErrorWithStatusCode.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/ConnectionTimeoutConfig
+  - term: ADConnectionAttributes
+    definition: 'Object declared by the contract with fields: URL, connectionType, LAST_IMPORT_TIME, CREATEACCOUNTJSON, DISABLEACCOUNTJSON, groupSearchBaseDN,
+      PASSWORD_NOOFSPLCHARS, PASSWORD_NOOFDIGITS, STATUSKEYJSON, SEARCHFILTER, ConfigJSON, REMOVEACCOUNTACTION. (51 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/ADConnectionAttributes
+  - term: RESTConnectionAttributes
+    definition: 'Object declared by the contract with fields: UpdateUserJSON, ChangePassJSON, CreateEntitlementJSON, UpdateEntitlementJSON, DeleteEntitlementJSON,
+      ApplicationDiscoveryJSON, RemoveAccountJSON, TicketStatusJSON, CreateTicketJSON, connectionType, ENDPOINTS_FILTER, PasswdPolicyJSON. (21
+      more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/RESTConnectionAttributes
+  - term: DBConnectionAttributes
+    definition: 'Object declared by the contract with fields: PASSWORD_MIN_LENGTH, CHANGEPASSJSON, ACCOUNTEXISTSJSON, ROLESIMPORT, ROLEOWNERIMPORT,
+      CREATEACCOUNTJSON, ENTITLEMENTEXISTJSON, USERIMPORT, DISABLEACCOUNTJSON, ENTITLEMENTVALUEIMPORT, connectionTimeoutConfig, UPDATEUSERJSON.
+      (26 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/DBConnectionAttributes
+  - term: ADSIConnectionAttributes
+    definition: 'Object declared by the contract with fields: importNestedMembership, PASSWDPOLICYJSON, CREATEACCOUNTJSON, ENDPOINTS_FILTER, DISABLEACCOUNTJSON,
+      REMOVEACCESSENTITLEMENTJSON, groupSearchBaseDN, connectionType, STATUSKEYJSON, DEFAULT_USER_ROLE, FOREST_DETAILS, USERNAME. (39 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/ADSIConnectionAttributes
+  - term: WorkdayConnectionAttributes
+    definition: 'Object declared by the contract with fields: USE_OAUTH, USER_IMPORT_MAPPING, ACCOUNTS_LAST_IMPORT_TIME, STATUS_KEY_JSON, connectionTimeoutConfig,
+      connectionType, RAAS_MAPPING_JSON, ACCOUNT_IMPORT_PAYLOAD, UPDATE_ACCOUNT_PAYLOAD, CLIENT_ID, STATUS_THRESHOLD_CONFIG, USERNAME. (30 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/WorkdayConnectionAttributes
+  - term: EntraIDConnectionAttributes
+    definition: 'Object declared by the contract with fields: UpdateUserJSON, MICROSOFT_GRAPH_ENDPOINT, ENDPOINTS_FILTER, ImportUserJSON, connectionType,
+      EnableAccountJSON, ConnectionJSON, CLIENT_ID, DeleteGroupJSON, ConfigJSON, ACCESS_TOKEN, AddAccessJSON. (39 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/EntraIDConnectionAttributes
+  - term: SAPConnectionAttributes
+    definition: 'Object declared by the contract with fields: CREATEACCOUNTJSON, AUDIT_LOG_JSON, connectionType, SAPTABLE_FILTER_LANG, PASSWORD_NOOFSPLCHARS,
+      TERMINATEDUSERGROUP, LOGS_TABLE_FILTER, ECC_OR_S4HANA, FIREFIGHTERID_REVOKE_ACCESS_JSON, ConfigJSON, FIREFIGHTERID_GRANT_ACCESS_JSON, PROV_PASSWORD.
+      (53 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/SAPConnectionAttributes
+  - term: SalesforceConnectionAttributes
+    definition: 'Object declared by the contract with fields: isTimeoutSupported, CLIENT_SECRET, OBJECT_TO_BE_IMPORTED, FEATURE_LICENSE_JSON,
+      CREATEACCOUNTJSON, REDIRECT_URI, REFRESH_TOKEN, connectionTimeoutConfig, MODIFYACCOUNTJSON, connectionType, isTimeoutConfigValidated, CLIENT_ID.
+      (8 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/SalesforceConnectionAttributes
+  - term: UNIXConnectionAttributes
+    definition: 'Object declared by the contract with fields: GROUPS_FILE, SSH_KEY, ACCOUNT_ENTITLEMENT_MAPPING_COMMAND, REMOVE_ACCESS_COMMAND,
+      PEM_KEY_FILE, PassThroughConnectionDetails, DISABLE_ACCOUNT_COMMAND, connectionTimeoutConfig, PORT_NUMBER, connectionType, CREATE_GROUP_COMMAND,
+      ACCOUNTS_FILE. (27 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/UNIXConnectionAttributes
+  - term: GithubRESTConnectionAttributes
+    definition: 'Object declared by the contract with fields: isTimeoutSupported, ConnectionJSON, PAM_CONFIG, ORGANIZATION_LIST, ImportAccountEntJSON,
+      STATUS_THRESHOLD_CONFIG, ACCESS_TOKENS, connectionTimeoutConfig, connectionType, isTimeoutConfigValidated.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/GithubRESTConnectionAttributes
+  - term: OktaConnectionAttributes
+    definition: 'Object declared by the contract with fields: IMPORTURL, AUTHTOKEN, isTimeoutSupported, OKTA_GROUPS_FILTER, ACCOUNTFIELDMAPPINGS,
+      IMPORT_INACTIVE_APPS, AUDIT_FILTER, USERFIELDMAPPINGS, APPACCOUNTFIELDMAPPINGS, MODIFYUSERDATAJSON, connectionTimeoutConfig, connectionType.
+      (7 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/OktaConnectionAttributes
+  - term: WorkdaySOAPConnectionAttributes
+    definition: 'Object declared by the contract with fields: ACCOUNTS_IMPORT_JSON, CHANGEPASSJSON, COMBINEDCREATEREQUEST, CONNECTIONJSON, CREATEACCOUNTJSON,
+      CUSTOM_CONFIG, DATA_TO_IMPORT, DATEFORMAT, DELETEACCOUNTJSON, DISABLEACCOUNTJSON, ENABLEACCOUNTJSON, GRANTACCESSJSON. (23 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/WorkdaySOAPConnectionAttributes
+  - term: SFTPConnectionAttributes
+    definition: 'Object declared by the contract with fields: HOST_NAME, PORT_NUMBER, USERNAME, AUTH_CREDENTIAL_TYPE, AUTH_CREDENTIAL_VALUE, PASSPHRASE,
+      FILES_TO_GET, FILES_TO_PUT, PAM_CONFIG, connectionType, isTimeoutSupported, isTimeoutConfigValidated. (1 more)'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/SFTPConnectionAttributes
+  - term: getConnections_request
+    definition: 'Object declared by the contract with fields: connectionname, connectiontype, max, offset.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/getConnections_request
+  - term: getConnectionDetails_request
+    definition: 'Object declared by the contract with fields: connectionname, connectionkey.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/getConnectionDetails_request
+  - term: getConnectionsResponse_ConnectionList_inner
+    definition: 'Object declared by the contract with fields: CONNECTIONNAME, CONNECTIONTYPE, CONNECTIONDESCRIPTION, STATUS, CREATEDBY, CREATEDON,
+      UPDATEDBY, UPDATEDON.'
+    tags:
+    - Object
+    source: openapi/saviynt-openapi.yaml#/components/schemas/getConnectionsResponse_ConnectionList_inner
