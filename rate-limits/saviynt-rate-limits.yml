@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: Saviynt API Rate Limits
 description: Saviynt Enterprise Identity Cloud REST API rate limiting details. Saviynt does not publicly document specific hard rate limits in requests-per-second or per-minute. Rate limiting behavior may vary by tenant configuration and deployment size. The platform uses OAuth 2.0 JWT bearer tokens with a 3600-second (60-minute) expiration. Best practices documentation recommends limiting concurrent API calls to avoid service overload.
 url: https://developers.saviynt.com/apis/rest/best-practices/
