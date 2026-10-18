@@ -33,6 +33,13 @@ specificationVersion: '0.23'
 tags:
   - Identity Governance
   - Identity Administration
+  - Identity and Access Management
+  - Privileged Access Management
+  - Segregation of Duties
+  - Security
+tags_raw:
+  - Identity Governance
+  - Identity Administration
   - Access Management
   - Privileged Access Management
   - Segregation of Duties
